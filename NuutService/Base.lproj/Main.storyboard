@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" alpha="0.14999999999999999" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="pR1-cw-Ln3">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="DvS-FJ-pUh">
                                 <rect key="frame" x="132" y="94" width="150" height="150"/>
@@ -103,16 +103,47 @@
                     <view key="view" contentMode="scaleToFill" id="59D-xg-g8K">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.25" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="70C-Dl-zAQ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HKF-ih-Dkw">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.95409864190000004" green="0.86527425049999995" blue="0.32140162589999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <items>
+                                    <navigationItem title="New Register" id="bCU-sp-jPN">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" image="ArrowBack" id="Nxa-vg-1P5">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="Vz7-1S-uLH"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="HKF-ih-Dkw" firstAttribute="trailing" secondItem="loT-5a-PJM" secondAttribute="trailing" id="2Wd-Q1-hgU"/>
+                            <constraint firstItem="70C-Dl-zAQ" firstAttribute="bottom" secondItem="loT-5a-PJM" secondAttribute="bottom" id="3gy-pp-ekK"/>
+                            <constraint firstItem="70C-Dl-zAQ" firstAttribute="leading" secondItem="loT-5a-PJM" secondAttribute="leading" id="714-3k-XNo"/>
+                            <constraint firstItem="HKF-ih-Dkw" firstAttribute="leading" secondItem="loT-5a-PJM" secondAttribute="leading" id="Qvy-NZ-Xkw"/>
+                            <constraint firstItem="70C-Dl-zAQ" firstAttribute="top" secondItem="loT-5a-PJM" secondAttribute="top" id="TFj-1q-IVa"/>
+                            <constraint firstItem="70C-Dl-zAQ" firstAttribute="trailing" secondItem="loT-5a-PJM" secondAttribute="trailing" id="gHC-ro-Z5f"/>
+                            <constraint firstItem="HKF-ih-Dkw" firstAttribute="top" secondItem="loT-5a-PJM" secondAttribute="top" id="kQD-og-QUj"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="loT-5a-PJM"/>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e37-4F-Dkd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-617" y="400"/>
+            <point key="canvasLocation" x="-617.39130434782612" y="399.77678571428572"/>
         </scene>
     </scenes>
     <resources>
+        <image name="ArrowBack" width="72" height="72"/>
         <image name="Logo" width="170.5" height="170.5"/>
         <image name="Wallpaper" width="1318.5" height="1962.5"/>
     </resources>
