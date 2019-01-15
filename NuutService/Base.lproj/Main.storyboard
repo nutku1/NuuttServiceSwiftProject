@@ -10,15 +10,15 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NuutService" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Main" id="BYZ-38-t0r" customClass="ViewController" customModule="NuutService" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.25" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="pR1-cw-Ln3">
+                            <imageView userInteractionEnabled="NO" alpha="0.14999999999999999" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="pR1-cw-Ln3">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="DvS-FJ-pUh">
@@ -44,22 +44,38 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVk-Vd-ha7">
-                                <rect key="frame" x="82" y="367" width="250" height="39"/>
+                                <rect key="frame" x="82" y="367" width="250" height="60"/>
                                 <color key="backgroundColor" red="0.95409864187240601" green="0.86527425050735474" blue="0.32140162587165833" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="Zdc-vj-9wl"/>
+                                    <constraint firstAttribute="height" constant="60" id="MPP-rW-HwY"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="Zdc-vj-9wl"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="22"/>
                                 <state key="normal" title="LOGIN">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WKx-ca-t5T">
+                                <rect key="frame" x="156.5" y="435" width="101" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="101" id="sCh-U0-KWf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <state key="normal" title="New Register">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="RAu-Fz-Sh5" kind="show" id="8sI-c7-4YA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="WKx-ca-t5T" firstAttribute="top" secondItem="gVk-Vd-ha7" secondAttribute="bottom" constant="8" id="2Al-ZB-rm6"/>
+                            <constraint firstItem="WKx-ca-t5T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6WT-jX-S8b"/>
                             <constraint firstItem="gVk-Vd-ha7" firstAttribute="top" secondItem="YJj-VR-hgd" secondAttribute="bottom" constant="14" id="6ez-mx-Nxz"/>
                             <constraint firstItem="pR1-cw-Ln3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Fbr-kS-u8b"/>
                             <constraint firstItem="CSp-We-5Dz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="I8y-we-uVx"/>
@@ -78,11 +94,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
+            <point key="canvasLocation" x="161" y="-330"/>
+        </scene>
+        <!--Register-->
+        <scene sceneID="htK-JV-quK">
+            <objects>
+                <viewController title="Register" id="RAu-Fz-Sh5" customClass="RegisterViewController" customModule="NuutService" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="59D-xg-g8K">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="loT-5a-PJM"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e37-4F-Dkd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-617" y="400"/>
         </scene>
     </scenes>
     <resources>
         <image name="Logo" width="170.5" height="170.5"/>
-        <image name="Wallpaper" width="1152" height="1728"/>
+        <image name="Wallpaper" width="1318.5" height="1962.5"/>
     </resources>
 </document>
