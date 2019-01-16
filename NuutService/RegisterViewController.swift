@@ -62,7 +62,30 @@ class RegisterViewController: UIViewController {
         }else{
 //            No Space
             showlog(title: "Result", message: "No Space")
+            uploadToServer(name: name, user: user, password: password)
+            
         }
+    }
+    
+    func uploadToServer(name:String,user:String,password:String) -> Void {
+        let myConstant = MyConstant()
+        let urlString:String = "\(myConstant.getUrlAddUser())\(name)&User=\(user)&Password=\(password)"
+        let url = URL(string: urlString)
+        let request = NSMutableURLRequest(url: url!)
+        let task = URLSession.shared.dataTask(with: request as URLRequest) {data,response,error in
+            if error != nil {
+                print("HAVE ERROR")
+            }else{
+                if let testResult = data {
+                    let canReadResult = NSString(data: testResult, encoding: String.Encoding.utf8.rawValue)
+                    print("canReadResult ==> \(String(describing: canReadResult))")
+                    
+                } //IF2
+            } //IF
+        } //END TASK
+        task.resume()
+        
+        
     }
     
     func showlog(title:String,message:String) -> Void {
