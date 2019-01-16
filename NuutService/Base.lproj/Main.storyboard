@@ -115,7 +115,7 @@
                             <imageView userInteractionEnabled="NO" alpha="0.14999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="70C-Dl-zAQ">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                             </imageView>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HKF-ih-Dkw">
+                            <navigationBar alpha="0.65000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HKF-ih-Dkw">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" red="0.95409864190000004" green="0.86527425049999995" blue="0.32140162589999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -207,8 +207,118 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NaG-Po-DUk">
+                                <rect key="frame" x="59" y="123" width="296" height="69"/>
+                                <color key="backgroundColor" red="0.95409864190000004" green="0.86527425049999995" blue="0.32140162589999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="U6A-Pq-oYy"/>
+                                    <constraint firstAttribute="width" constant="296" id="fxa-04-7tv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="myButton:" destination="MrD-Zd-71z" eventType="touchUpInside" id="zB9-5f-2KR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMo-1J-z1J">
+                                <rect key="frame" x="45" y="200" width="324" height="69"/>
+                                <color key="backgroundColor" red="0.95409864187240601" green="0.86527425050735474" blue="0.32140162587165833" alpha="0.80115582191780821" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="4i6-R3-6il"/>
+                                    <constraint firstAttribute="width" constant="324" id="QHN-jx-RNj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="myButton:" destination="MrD-Zd-71z" eventType="touchUpInside" id="mfP-Dx-xdQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fla-qm-Ttw">
+                                <rect key="frame" x="29.5" y="277" width="355" height="69"/>
+                                <color key="backgroundColor" red="0.95409864190000004" green="0.86527425049999995" blue="0.32140162589999999" alpha="0.6072613441780822" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="HI9-cR-kuB"/>
+                                    <constraint firstAttribute="width" constant="355" id="bGX-6l-hi3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="myButton:" destination="MrD-Zd-71z" eventType="touchUpInside" id="Sjp-um-VpC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZE-5a-2c9">
+                                <rect key="frame" x="45" y="354" width="324" height="69"/>
+                                <color key="backgroundColor" red="0.95409864190000004" green="0.86527425049999995" blue="0.32140162589999999" alpha="0.4061697345890411" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="YE1-cZ-faM"/>
+                                    <constraint firstAttribute="width" constant="324" id="YoQ-qr-F2N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="myButton:" destination="MrD-Zd-71z" eventType="touchUpInside" id="y7M-xd-OId"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kGz-Sh-u8m">
+                                <rect key="frame" x="59" y="431" width="296" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95409864190000004" green="0.86527425049999995" blue="0.32140162589999999" alpha="0.59519477740821913" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="myButton:" destination="MrD-Zd-71z" eventType="touchUpInside" id="h5E-bm-oEn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7iK-oJ-535">
+                                <rect key="frame" x="45" y="508" width="324" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95409864190000004" green="0.86527425049999995" blue="0.32140162589999999" alpha="0.80396511131232873" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="myButton:" destination="MrD-Zd-71z" eventType="touchUpInside" id="MKu-57-uWT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i2c-7v-liB">
+                                <rect key="frame" x="30" y="585" width="355" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95409864190000004" green="0.86527425049999995" blue="0.32140162589999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="myButton:" destination="MrD-Zd-71z" eventType="touchUpInside" id="0r2-Vb-dMs"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="YMi-vL-BkU">
+                                <rect key="frame" x="132" y="664" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fla-qm-Ttw" firstAttribute="top" secondItem="BMo-1J-z1J" secondAttribute="bottom" constant="8" id="JNW-An-bQx"/>
+                            <constraint firstItem="iZE-5a-2c9" firstAttribute="top" secondItem="fla-qm-Ttw" secondAttribute="bottom" constant="8" id="Js8-vm-XlY"/>
+                            <constraint firstItem="NaG-Po-DUk" firstAttribute="top" secondItem="n28-10-epd" secondAttribute="top" constant="79" id="THo-vr-2T7"/>
+                            <constraint firstItem="iZE-5a-2c9" firstAttribute="centerX" secondItem="PoH-cV-lad" secondAttribute="centerX" id="d1i-iB-wkk"/>
+                            <constraint firstItem="fla-qm-Ttw" firstAttribute="centerX" secondItem="PoH-cV-lad" secondAttribute="centerX" id="dwn-o5-c0F"/>
+                            <constraint firstItem="BMo-1J-z1J" firstAttribute="top" secondItem="NaG-Po-DUk" secondAttribute="bottom" constant="8" id="e6I-XA-5Ot"/>
+                            <constraint firstItem="BMo-1J-z1J" firstAttribute="centerX" secondItem="PoH-cV-lad" secondAttribute="centerX" id="pXE-WO-teX"/>
+                            <constraint firstItem="NaG-Po-DUk" firstAttribute="centerX" secondItem="PoH-cV-lad" secondAttribute="centerX" id="zed-BK-MqW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="n28-10-epd"/>
                     </view>
                 </viewController>
