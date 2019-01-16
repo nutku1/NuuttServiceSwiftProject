@@ -117,7 +117,7 @@
                                         <barButtonItem key="leftBarButtonItem" title="Item" image="ArrowBack" id="Nxa-vg-1P5">
                                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <connections>
-                                                <segue destination="BYZ-38-t0r" kind="show" id="Vz7-1S-uLH"/>
+                                                <segue destination="BYZ-38-t0r" kind="show" identifier="BackMain" id="Vz7-1S-uLH"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Item" image="CloudUpload" id="y8F-OX-TJn">

@@ -80,6 +80,18 @@ class RegisterViewController: UIViewController {
                     let canReadResult = NSString(data: testResult, encoding: String.Encoding.utf8.rawValue)
                     print("canReadResult ==> \(String(describing: canReadResult))")
                     
+                    if canReadResult == "True" {
+                        DispatchQueue.main.async {
+                            self.performSegue(withIdentifier: "BackMain", sender: self)
+                        }
+
+                    }else{
+                        DispatchQueue.main.async {
+                           self.myAlert(title: "Connot Upload", message: "Please Try Again!! Connot Upload")
+                        }
+                       
+                    }
+                    
                 } //IF2
             } //IF
         } //END TASK
