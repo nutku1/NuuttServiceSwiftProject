@@ -111,26 +111,64 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" red="0.95409864190000004" green="0.86527425049999995" blue="0.32140162589999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="barTintColor" red="0.95409864190000004" green="0.86527425049999995" blue="0.32140162589999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <items>
                                     <navigationItem title="New Register" id="bCU-sp-jPN">
                                         <barButtonItem key="leftBarButtonItem" title="Item" image="ArrowBack" id="Nxa-vg-1P5">
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <connections>
                                                 <segue destination="BYZ-38-t0r" kind="show" id="Vz7-1S-uLH"/>
                                             </connections>
                                         </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Item" image="CloudUpload" id="y8F-OX-TJn">
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name :" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LJj-kt-yrt">
+                                <rect key="frame" x="50.5" y="181" width="313" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="313" id="QxG-cD-1LP"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username :" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9B5-xl-H27">
+                                <rect key="frame" x="50.5" y="219" width="313" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="313" id="q80-ce-NEr"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password :" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2pq-qy-LCp">
+                                <rect key="frame" x="50.5" y="257" width="313" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="313" id="uVE-vv-wL9"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="HKF-ih-Dkw" firstAttribute="trailing" secondItem="loT-5a-PJM" secondAttribute="trailing" id="2Wd-Q1-hgU"/>
                             <constraint firstItem="70C-Dl-zAQ" firstAttribute="bottom" secondItem="loT-5a-PJM" secondAttribute="bottom" id="3gy-pp-ekK"/>
                             <constraint firstItem="70C-Dl-zAQ" firstAttribute="leading" secondItem="loT-5a-PJM" secondAttribute="leading" id="714-3k-XNo"/>
+                            <constraint firstItem="2pq-qy-LCp" firstAttribute="centerX" secondItem="59D-xg-g8K" secondAttribute="centerX" id="HW3-He-jlW"/>
                             <constraint firstItem="HKF-ih-Dkw" firstAttribute="leading" secondItem="loT-5a-PJM" secondAttribute="leading" id="Qvy-NZ-Xkw"/>
                             <constraint firstItem="70C-Dl-zAQ" firstAttribute="top" secondItem="loT-5a-PJM" secondAttribute="top" id="TFj-1q-IVa"/>
+                            <constraint firstItem="9B5-xl-H27" firstAttribute="top" secondItem="LJj-kt-yrt" secondAttribute="bottom" constant="8" id="Tgi-3g-eqk"/>
                             <constraint firstItem="70C-Dl-zAQ" firstAttribute="trailing" secondItem="loT-5a-PJM" secondAttribute="trailing" id="gHC-ro-Z5f"/>
                             <constraint firstItem="HKF-ih-Dkw" firstAttribute="top" secondItem="loT-5a-PJM" secondAttribute="top" id="kQD-og-QUj"/>
+                            <constraint firstItem="2pq-qy-LCp" firstAttribute="top" secondItem="9B5-xl-H27" secondAttribute="bottom" constant="8" id="llI-gu-2WD"/>
+                            <constraint firstItem="LJj-kt-yrt" firstAttribute="centerX" secondItem="59D-xg-g8K" secondAttribute="centerX" id="mel-nw-qKB"/>
+                            <constraint firstItem="LJj-kt-yrt" firstAttribute="top" secondItem="HKF-ih-Dkw" secondAttribute="bottom" constant="93" id="xU5-r6-TpZ"/>
+                            <constraint firstItem="9B5-xl-H27" firstAttribute="centerX" secondItem="59D-xg-g8K" secondAttribute="centerX" id="zCG-1F-IE3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="loT-5a-PJM"/>
                     </view>
@@ -144,6 +182,7 @@
     </scenes>
     <resources>
         <image name="ArrowBack" width="72" height="72"/>
+        <image name="CloudUpload" width="72" height="72"/>
         <image name="Logo" width="170.5" height="170.5"/>
         <image name="Wallpaper" width="1318.5" height="1962.5"/>
     </resources>
