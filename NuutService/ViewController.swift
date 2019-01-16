@@ -37,8 +37,68 @@ class ViewController: UIViewController {
         let urlString:String = myConstant.getUrlGetUser(user: user)
         print("urlString ==> \(urlString)")
         
-        
-    }
+        let urlObject = URL(string: urlString)
+        let requestObject = NSMutableURLRequest(url: urlObject!)
+        let task = URLSession.shared.dataTask(with: requestObject as URLRequest){data,response,error in
+            
+            if error != nil {
+                print("Have Error")
+            }else{
+                if let testResult = data {
+                    let canReadAble = NSString(data: testResult, encoding: String.Encoding.utf8.rawValue)
+                    print("canReadAble ==> \(String(describing: canReadAble))")
+                    DispatchQueue.main.async {
+                        self.convertStringToDictionry(rawString: canReadAble! as String)
+                    }
+                }
+            }
+            
+        }
+        task.resume()
+    } //END TASK
+    
+    func convertStringToDictionry(rawString:String) -> Void {
+        print("rawString ==> \(rawString)")
+        if rawString == "null" {
+            myAlert(title: "ERROR", message: "Not Have User \(user!) In DATABASE")
+        }else{
+            let json:String = slipWord(rawString: rawString)
+            print("json ==> \(json)")
+            var myDictionary:NSDictionary?
+            
+            
+            if let testJson = json.data(using: String.Encoding.utf8) {
+                
+                do {
+                    myDictionary = try JSONSerialization.jsonObject(with: testJson, options: []) as? [String:AnyObject] as NSDictionary?
+                    print("myDictionary ==> \(String(describing: myDictionary))")
+                    
+                    if let testDictionary = myDictionary {
+                        print("testDictionary ==> \(testDictionary)")
+                        let truePassword:String = testDictionary["Password"] as! String
+                        
+                        if password! == truePassword {
+//                            SUCCESS LOGIN
+                            
+                        }else{
+                            myAlert(title: "ERROR", message: "Password not Correct Try Again")
+                        }
+                        
+                    }
+                    
+                } catch let error as NSError{
+                    print("Have Error \(error)")
+                }
+                
+            } //IF
+        } //IF
+    } //Convert
+    
+    func slipWord(rawString:String) -> String {
+        var results = rawString.components(separatedBy: "[")
+        var results2 = results[1].components(separatedBy: "]")
+        return results2[0]
+    } //SlipWord
     
     @IBAction func loginButton(_ sender: UIButton) {
         user = userTextField.text
@@ -56,7 +116,7 @@ class ViewController: UIViewController {
         
         
         
-    }
+    }// Login Button
     
 }
 
