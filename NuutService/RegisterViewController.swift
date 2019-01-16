@@ -44,13 +44,24 @@ class RegisterViewController: UIViewController {
         
     } //CLOUD UPLOAD
     
+    func myAlert(title:String,message:String) -> Void {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { (action) in
+            alert.dismiss(animated: true, completion: nil)
+        }))
+        present(alert,animated: true,completion: nil)
+        
+    } // FINCTION MY ALERT
+    
     func checkSpace(name:String,user:String,password:String) -> Void {
         if (name.count == 0) || (user.count == 0) || (password.count == 0) {
 //            Have Space
-            showlog(title: "Have Space", message: "")
+            showlog(title: "Result", message: "Have Space")
+            myAlert(title: "Have Space", message: "Please Fill All Every Blank")
         }else{
 //            No Space
-            showlog(title: "No Space", message: "")
+            showlog(title: "Result", message: "No Space")
         }
     }
     
