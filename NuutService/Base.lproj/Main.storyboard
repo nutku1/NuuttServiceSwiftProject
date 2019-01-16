@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" alpha="0.14999999999999999" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="pR1-cw-Ln3">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="DvS-FJ-pUh">
                                 <rect key="frame" x="132" y="94" width="150" height="150"/>
@@ -105,7 +105,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" alpha="0.25" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="70C-Dl-zAQ">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                             </imageView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HKF-ih-Dkw">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -122,6 +122,9 @@
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Item" image="CloudUpload" id="y8F-OX-TJn">
                                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="cloudUploadButton:" destination="RAu-Fz-Sh5" id="yhI-KO-fXx"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -173,7 +176,12 @@
                         <viewLayoutGuide key="safeArea" id="loT-5a-PJM"/>
                     </view>
                     <toolbarItems/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="nameTextField" destination="LJj-kt-yrt" id="Wgm-ZJ-Te0"/>
+                        <outlet property="passwordTextField" destination="2pq-qy-LCp" id="ino-EF-Ghz"/>
+                        <outlet property="userTextField" destination="9B5-xl-H27" id="S51-im-Qwd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e37-4F-Dkd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
