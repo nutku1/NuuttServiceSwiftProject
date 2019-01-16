@@ -79,7 +79,7 @@ class ViewController: UIViewController {
                         
                         if password! == truePassword {
 //                            SUCCESS LOGIN
-                            
+                            performSegue(withIdentifier: "GoToService", sender: self)
                         }else{
                             myAlert(title: "ERROR", message: "Password not Correct Try Again")
                         }
